@@ -166,6 +166,7 @@ void excluirPrimeiroElemento()
 	if (primeiro != NULL)
 	{
 		primeiro = primeiro->prox;
+		primeiro->ant = NULL;
 	}
 	cout << "primeiro elemento excluido";
 }
@@ -182,7 +183,7 @@ void excluirUltimoElemento()
 	}
 
 	
-	cout << "primeiro elemento excluido" << ultimo->valor;
+	cout << "elemento excluido" << ultimo->valor;
 
 }
 
